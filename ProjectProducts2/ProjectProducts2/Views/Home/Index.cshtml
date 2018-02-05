@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Product List</h2>
+
+<ul>
+@foreach (var p in ViewBag.ProductList)
+{
+
+    <li>Product ID: @p.ProductId<br />
+        Product Name: @p.ProductName<br />
+        Unit Price: @p.UnitPrice<br />
+        Supplier ID: @p.SupplierId<br />
+        Company ID: @p.CompanyId<br /><br /></li>
+
+}
+</ul>
